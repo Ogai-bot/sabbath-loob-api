@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SabbathLoop.API", "SabbathLoop.API\SabbathLoop.API.csproj", "{27E133F5-5B2A-48A4-AD95-ADBF4022FCF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SabbathLoop.Domain", "SabbathLoop.Domain\SabbathLoop.Domain.csproj", "{B43DEC80-475A-4F08-B8D6-A159883A9D83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27E133F5-5B2A-48A4-AD95-ADBF4022FCF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E133F5-5B2A-48A4-AD95-ADBF4022FCF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E133F5-5B2A-48A4-AD95-ADBF4022FCF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E133F5-5B2A-48A4-AD95-ADBF4022FCF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43DEC80-475A-4F08-B8D6-A159883A9D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43DEC80-475A-4F08-B8D6-A159883A9D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43DEC80-475A-4F08-B8D6-A159883A9D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43DEC80-475A-4F08-B8D6-A159883A9D83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
