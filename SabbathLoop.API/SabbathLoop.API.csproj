@@ -2,12 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>SabbathLoop.API</RootNamespace>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SabbathLoop.Domain\SabbathLoop.Domain.csproj" />
   </ItemGroup>
 
 </Project>
