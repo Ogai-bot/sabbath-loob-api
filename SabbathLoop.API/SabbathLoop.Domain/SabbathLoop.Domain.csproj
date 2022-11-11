@@ -14,4 +14,16 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Commands\Companies\" />
+    <None Remove="Commands\Companies\Entities\" />
+    <None Remove="Util\" />
+    <None Remove="Commands\Companies\Entities\DbConfig\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\Companies\" />
+    <Folder Include="Commands\Companies\Entities\" />
+    <Folder Include="Util\" />
+    <Folder Include="Commands\Companies\Entities\DbConfig\" />
+  </ItemGroup>
 </Project>

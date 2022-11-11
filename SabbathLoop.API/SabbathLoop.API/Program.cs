@@ -1,23 +1,13 @@
-using Microsoft.EntityFrameworkCore;
-using SabbathLoop.Domain.Commands;
+using SabbathLoop.API;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<CommandDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CommandsSabbathLoopDb")));
-
-var app = builder.Build();
-if (app.Environment.IsDevelopment())
+public class Program
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    public static void Main(string[] args)
+        => CreateHostBuilder(args).Build().Run();
 
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.MapControllers();
-app.Run();
+    // EF Core uses this method at design time to access the DbContext
+    public static IHostBuilder CreateHostBuilder(string[] args)
+        => Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(
+                webBuilder => webBuilder.UseStartup<Startup>());
+}
