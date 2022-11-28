@@ -21,11 +21,17 @@
     <None Remove="Commands\Companies\Entities\" />
     <None Remove="Util\" />
     <None Remove="Commands\Companies\Entities\DbConfig\" />
+    <None Remove="Commands\Churches\" />
+    <None Remove="Commands\Churches\Entities\" />
+    <None Remove="Commands\Churches\Entities\DbConfig\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\Companies\" />
     <Folder Include="Commands\Companies\Entities\" />
     <Folder Include="Util\" />
     <Folder Include="Commands\Companies\Entities\DbConfig\" />
+    <Folder Include="Commands\Churches\" />
+    <Folder Include="Commands\Churches\Entities\" />
+    <Folder Include="Commands\Churches\Entities\DbConfig\" />
   </ItemGroup>
 </Project>
