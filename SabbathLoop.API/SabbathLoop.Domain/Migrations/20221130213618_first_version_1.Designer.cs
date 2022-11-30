@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SabbathLoop.Domain.Commands;
 
@@ -11,9 +12,11 @@ using SabbathLoop.Domain.Commands;
 namespace SabbathLoop.Domain.Migrations
 {
     [DbContext(typeof(CommandDbContext))]
-    partial class CommandDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221130213618_first_version_1")]
+    partial class firstversion1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,10 +55,8 @@ namespace SabbathLoop.Domain.Migrations
                         .HasColumnName("name");
 
                     b.Property<bool>("Removed")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasColumnName("removed")
-                        .HasDefaultValueSql("0");
+                        .HasColumnName("removed");
 
                     b.HasKey("Id")
                         .HasName("PK_churches");
@@ -97,10 +98,8 @@ namespace SabbathLoop.Domain.Migrations
                         .HasColumnName("name");
 
                     b.Property<bool>("Removed")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasColumnName("removed")
-                        .HasDefaultValueSql("0");
+                        .HasColumnName("removed");
 
                     b.HasKey("Id")
                         .HasName("PK_classes");
@@ -136,10 +135,8 @@ namespace SabbathLoop.Domain.Migrations
                         .HasColumnName("name");
 
                     b.Property<bool>("Removed")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasColumnName("removed")
-                        .HasDefaultValueSql("0");
+                        .HasColumnName("removed");
 
                     b.HasKey("Id")
                         .HasName("PK_companies");
@@ -197,10 +194,8 @@ namespace SabbathLoop.Domain.Migrations
                         .HasColumnName("password");
 
                     b.Property<bool>("Removed")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasColumnName("removed")
-                        .HasDefaultValueSql("0");
+                        .HasColumnName("removed");
 
                     b.Property<DateTimeOffset>("TermsAcceptanceDate")
                         .HasColumnType("datetimeoffset")
@@ -251,10 +246,8 @@ namespace SabbathLoop.Domain.Migrations
                         .HasColumnName("name");
 
                     b.Property<bool>("Removed")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasColumnName("removed")
-                        .HasDefaultValueSql("0");
+                        .HasColumnName("removed");
 
                     b.Property<DateTimeOffset>("StartDate")
                         .HasColumnType("datetimeoffset")
@@ -327,10 +320,8 @@ namespace SabbathLoop.Domain.Migrations
                         .HasColumnName("member_id");
 
                     b.Property<bool>("Removed")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasColumnName("removed")
-                        .HasDefaultValueSql("0");
+                        .HasColumnName("removed");
 
                     b.Property<bool>("TalkedAboutGod")
                         .ValueGeneratedOnAdd()
@@ -397,10 +388,8 @@ namespace SabbathLoop.Domain.Migrations
                         .HasColumnName("last_modified");
 
                     b.Property<bool>("Removed")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasColumnName("removed")
-                        .HasDefaultValueSql("0");
+                        .HasColumnName("removed");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier")
@@ -468,10 +457,8 @@ namespace SabbathLoop.Domain.Migrations
                         .HasColumnName("password");
 
                     b.Property<bool>("Removed")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
-                        .HasColumnName("removed")
-                        .HasDefaultValueSql("0");
+                        .HasColumnName("removed");
 
                     b.Property<DateTimeOffset>("TermsAcceptanceDate")
                         .HasColumnType("datetimeoffset")

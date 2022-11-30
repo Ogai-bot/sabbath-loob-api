@@ -24,6 +24,24 @@
     <None Remove="Commands\Churches\" />
     <None Remove="Commands\Churches\Entities\" />
     <None Remove="Commands\Churches\Entities\DbConfig\" />
+    <None Remove="Commands\Classes\" />
+    <None Remove="Commands\Classes\Entities\" />
+    <None Remove="Commands\Classes\Entities\DbConfig\" />
+    <None Remove="Commands\Quarters\" />
+    <None Remove="Commands\Quarters\Entities\" />
+    <None Remove="Commands\Quarters\Entities\DbConfig\" />
+    <None Remove="Commands\Users\" />
+    <None Remove="Commands\Users\Entities\" />
+    <None Remove="Commands\Users\Entities\DbConfig\" />
+    <None Remove="Commands\UserAccessClasses\" />
+    <None Remove="Commands\UserAccessClasses\Entities\" />
+    <None Remove="Commands\UserAccessClasses\Entities\DbConfig\" />
+    <None Remove="Commands\Members\" />
+    <None Remove="Commands\Members\Entities\" />
+    <None Remove="Commands\Members\Entities\DbConfig\" />
+    <None Remove="Commands\Responses\" />
+    <None Remove="Commands\Responses\Entities\" />
+    <None Remove="Commands\Responses\Entities\DbConfig\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\Companies\" />
@@ -33,5 +51,23 @@
     <Folder Include="Commands\Churches\" />
     <Folder Include="Commands\Churches\Entities\" />
     <Folder Include="Commands\Churches\Entities\DbConfig\" />
+    <Folder Include="Commands\Classes\" />
+    <Folder Include="Commands\Classes\Entities\" />
+    <Folder Include="Commands\Classes\Entities\DbConfig\" />
+    <Folder Include="Commands\Quarters\" />
+    <Folder Include="Commands\Quarters\Entities\" />
+    <Folder Include="Commands\Quarters\Entities\DbConfig\" />
+    <Folder Include="Commands\Users\" />
+    <Folder Include="Commands\Users\Entities\" />
+    <Folder Include="Commands\Users\Entities\DbConfig\" />
+    <Folder Include="Commands\UserAccessClasses\" />
+    <Folder Include="Commands\UserAccessClasses\Entities\" />
+    <Folder Include="Commands\UserAccessClasses\Entities\DbConfig\" />
+    <Folder Include="Commands\Members\" />
+    <Folder Include="Commands\Members\Entities\" />
+    <Folder Include="Commands\Members\Entities\DbConfig\" />
+    <Folder Include="Commands\Responses\" />
+    <Folder Include="Commands\Responses\Entities\" />
+    <Folder Include="Commands\Responses\Entities\DbConfig\" />
   </ItemGroup>
 </Project>
