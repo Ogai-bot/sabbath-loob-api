@@ -41,6 +41,7 @@ Tabelas (entidades):
 - Quarters
   - Id
   - Name
+  - CompanyId
   - StartDate
   - EndDate
   - CreationDate
