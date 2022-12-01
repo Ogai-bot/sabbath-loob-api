@@ -14,6 +14,7 @@ namespace SabbathLoop.Domain.Commands.Users.Entities.DbConfig
             builder.HasKey(b => b.Id).HasName("PK_users");
             builder.Property(b => b.Id).HasColumnName("id").HasColumnType("uniqueidentifier").HasDefaultValueSql("NEWID()").IsRequired();
             builder.Property(b => b.Name).HasColumnName("name").HasColumnType("varchar(200)").IsRequired();
+            builder.Property(b => b.Gender).HasColumnName("gender").HasColumnType("int").IsRequired();
             builder.Property(b => b.CompanyId).HasColumnName("company_id").HasColumnType("uniqueidentifier").IsRequired();
             builder.HasOne(b => b.Company).WithMany(b => b.Users).HasForeignKey(b => b.CompanyId).HasConstraintName("FK_users_company_id").OnDelete(DeleteBehavior.NoAction).IsRequired();
             builder.Property(b => b.Email).HasColumnName("email").HasColumnType("varchar(200)").IsRequired();

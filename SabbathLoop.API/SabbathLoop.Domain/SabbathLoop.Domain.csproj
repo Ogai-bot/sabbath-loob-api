@@ -42,6 +42,7 @@
     <None Remove="Commands\Responses\" />
     <None Remove="Commands\Responses\Entities\" />
     <None Remove="Commands\Responses\Entities\DbConfig\" />
+    <None Remove="Commands\Users\Entities\Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\Companies\" />
@@ -69,5 +70,6 @@
     <Folder Include="Commands\Responses\" />
     <Folder Include="Commands\Responses\Entities\" />
     <Folder Include="Commands\Responses\Entities\DbConfig\" />
+    <Folder Include="Commands\Users\Entities\Enums\" />
   </ItemGroup>
 </Project>
