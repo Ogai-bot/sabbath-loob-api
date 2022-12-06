@@ -1,8 +1,5 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SabbathLoop.Domain.Commands.Churches.Entities;
-using SabbathLoop.Domain.Commands.Quarters.Entities;
 
 namespace SabbathLoop.Domain.Commands.Users.Entities.DbConfig
 {

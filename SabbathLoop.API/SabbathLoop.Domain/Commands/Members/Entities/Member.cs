@@ -1,7 +1,6 @@
-﻿using System;
-using SabbathLoop.Domain.Commands.Companies.Entities;
+﻿using SabbathLoop.Domain.Commands.Companies.Entities;
 using SabbathLoop.Domain.Commands.Responses.Entities;
-using SabbathLoop.Domain.Commands.UserAccessClasses.Entities;
+using SabbathLoop.Domain.Commands.Users.Entities.Enums;
 using SabbathLoop.Domain.Util;
 
 namespace SabbathLoop.Domain.Commands.Members.Entities
@@ -10,6 +9,7 @@ namespace SabbathLoop.Domain.Commands.Members.Entities
 	{
         public Guid Id { get; private set; }
         public string Name { get; private set; }
+        public EGender Gender { get; private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }
         public bool AskNewPassword { get; private set; }
@@ -30,6 +30,7 @@ namespace SabbathLoop.Domain.Commands.Members.Entities
 
         public Member(
             string name,
+            EGender gender,
             string email,
             string password,
             bool askNewPassword,
@@ -41,6 +42,7 @@ namespace SabbathLoop.Domain.Commands.Members.Entities
         {
             Id = id ?? Guid.NewGuid();
             Name = name;
+            Gender = gender;
             Email = email;
             Password = password;
             AskNewPassword = askNewPassword;

@@ -42,7 +42,8 @@
     <None Remove="Commands\Responses\" />
     <None Remove="Commands\Responses\Entities\" />
     <None Remove="Commands\Responses\Entities\DbConfig\" />
-    <None Remove="Commands\Users\Entities\Enums\" />
+    <None Remove="Commands\Shared\" />
+    <None Remove="Commands\Shared\Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\Companies\" />
@@ -70,6 +71,7 @@
     <Folder Include="Commands\Responses\" />
     <Folder Include="Commands\Responses\Entities\" />
     <Folder Include="Commands\Responses\Entities\DbConfig\" />
-    <Folder Include="Commands\Users\Entities\Enums\" />
+    <Folder Include="Commands\Shared\" />
+    <Folder Include="Commands\Shared\Enums\" />
   </ItemGroup>
 </Project>

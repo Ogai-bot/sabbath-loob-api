@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using SabbathLoop.Domain.Commands.Companies.Entities;
 using SabbathLoop.Domain.Commands.UserAccessClasses.Entities;
 using SabbathLoop.Domain.Commands.Users.Entities.Enums;
@@ -11,7 +12,7 @@ namespace SabbathLoop.Domain.Commands.Users.Entities
         public Guid Id { get; private set; }
         public string Name { get; private set; }
         public string Email { get; private set; }
-        public Gender Gender { get; private set; }
+        public EGender Gender { get; private set; }
         public string Password { get; private set; }
         public bool AskNewPassword { get; private set; }
         public bool HasConfirmedEmail { get; private set; }
@@ -31,6 +32,7 @@ namespace SabbathLoop.Domain.Commands.Users.Entities
 
         public User(
             string name,
+            EGender gender,
             string email,
             string password,
             bool askNewPassword,
@@ -42,6 +44,7 @@ namespace SabbathLoop.Domain.Commands.Users.Entities
         {
             Id = id ?? Guid.NewGuid();
             Name = name;
+            Gender = gender;
             Email = email;
             Password = password;
             AskNewPassword = askNewPassword;
