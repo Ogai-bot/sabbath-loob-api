@@ -44,6 +44,7 @@
     <None Remove="Commands\Responses\Entities\DbConfig\" />
     <None Remove="Commands\Shared\" />
     <None Remove="Commands\Shared\Enums\" />
+    <None Remove="Commands\Churches\Commands\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\Companies\" />
@@ -73,5 +74,6 @@
     <Folder Include="Commands\Responses\Entities\DbConfig\" />
     <Folder Include="Commands\Shared\" />
     <Folder Include="Commands\Shared\Enums\" />
+    <Folder Include="Commands\Churches\Commands\" />
   </ItemGroup>
 </Project>

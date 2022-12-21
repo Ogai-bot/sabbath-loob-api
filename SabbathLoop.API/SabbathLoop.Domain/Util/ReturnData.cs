@@ -22,10 +22,11 @@ namespace SabbathLoop.Domain.Util
         public ReturnData(int rows) : this(rows, EErrorCode.None, null, null) { }
         public ReturnData(EErrorCode errorCode, string? errorMesange) : this(0, errorCode, null, errorMesange) { }
 
-        public void FinalizeTransition(DateTimeOffset beginDate)
+        public ReturnData FinalizeTransition(DateTimeOffset beginDate)
         {
             BeginDate = beginDate;
             EndDate = DateTimeOffset.UtcNow;
+            return this;
         }
     }
 
